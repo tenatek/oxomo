@@ -1,0 +1,27 @@
+.navigation {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  align-items: center;
+
+  .logo {
+    height: 30px;
+    display: flex;
+    padding-right: 1rem;
+    align-items: center;
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .menu {
+    margin-left: auto;
+    align-items: center;
+
+    .item {
+      padding-right: 1.5rem;
+    }
+  }
+}
