@@ -1,0 +1,80 @@
+@import './mixins';
+
+$container: 7vw;
+$containerSmall: 3vw;
+
+.container {
+  padding-left: $container !important;
+  padding-right: $container !important;
+  @include small() {
+    padding-left: $containerSmall !important;
+    padding-right: $containerSmall !important;
+  }
+}
+
+.container-left {
+  padding-left: $container !important;
+  @include small() {
+    padding-left: $containerSmall !important;
+  }
+}
+
+.container-right {
+  padding-right: $container !important;
+  @include small() {
+    padding-right: $containerSmall !important;
+  }
+}
+
+.container-left.responsive,
+.container-right.responsive {
+  @include medium() {
+    padding-left: $container !important;
+    padding-right: $container !important;
+  }
+  @include small() {
+    padding-left: $containerSmall !important;
+    padding-right: $containerSmall !important;
+  }
+}
+
+.responsive-cols {
+  @include medium() {
+    flex-wrap: wrap;
+  }
+
+  > * {
+    @include medium() {
+      flex: 1 1 100% !important;
+    }
+  }
+}
+
+.responsive-hidden {
+  @include medium() {
+    display: none !important;
+  }
+}
+
+.responsive-navigation {
+  @include medium() {
+    flex-wrap: wrap;
+  }
+
+  .menu-icon {
+    display: none;
+
+    @include medium() {
+      display: block;
+      margin-left: auto;
+    }
+  }
+
+  .menu {
+    display: flex;
+    @include medium() {
+      flex: 1 1 100%;
+      display: none;
+    }
+  }
+}

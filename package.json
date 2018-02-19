@@ -1,0 +1,10 @@
+{
+  "name": "oxomo",
+  "version": "0.1.0",
+  "description": "HTML, JS & SCSS snippets to agilize website construction.",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}
